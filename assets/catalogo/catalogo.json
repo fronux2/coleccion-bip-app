@@ -1,0 +1,1977 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-28T05:33:27.122758+00:00",
+  "cards": [
+    {
+      "id": "0001",
+      "fecha": "2010-09-15",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0001.jpg"
+    },
+    {
+      "id": "0002",
+      "fecha": "2013-11-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0002.jpg"
+    },
+    {
+      "id": "0003",
+      "fecha": "2013-12-20",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0003.jpg"
+    },
+    {
+      "id": "0004",
+      "fecha": "2013-12-20",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0004.jpg"
+    },
+    {
+      "id": "0005",
+      "fecha": "2013-12-20",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0005.jpg"
+    },
+    {
+      "id": "0006",
+      "fecha": "2013-12-20",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0006.jpg"
+    },
+    {
+      "id": "0007",
+      "fecha": "2014-03-04",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0007.jpg"
+    },
+    {
+      "id": "0008",
+      "fecha": "2014-03-07",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0008.jpg"
+    },
+    {
+      "id": "0009",
+      "fecha": "2014-03-13",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0009.jpg"
+    },
+    {
+      "id": "0010",
+      "fecha": "2014-02-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0010.jpg"
+    },
+    {
+      "id": "0011",
+      "fecha": "2015-06-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0011.jpg"
+    },
+    {
+      "id": "0012",
+      "fecha": "2015-06-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0012.jpg"
+    },
+    {
+      "id": "0013",
+      "fecha": "2015-08-30",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0013.jpg"
+    },
+    {
+      "id": "0014",
+      "fecha": "2015-08-30",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0014.jpg"
+    },
+    {
+      "id": "0015",
+      "fecha": "2015-09-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0015.jpg"
+    },
+    {
+      "id": "0016",
+      "fecha": "2015-09-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0016.jpg"
+    },
+    {
+      "id": "0017",
+      "fecha": "2015-09-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0017.jpg"
+    },
+    {
+      "id": "0018",
+      "fecha": "2015-09-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0018.jpg"
+    },
+    {
+      "id": "0019",
+      "fecha": "2015-09-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0019.jpg"
+    },
+    {
+      "id": "0020",
+      "fecha": "2015-09-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0020.jpg"
+    },
+    {
+      "id": "0021",
+      "fecha": "2016-02-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0021.jpg"
+    },
+    {
+      "id": "0022",
+      "fecha": "2016-03-14",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0022.jpg"
+    },
+    {
+      "id": "0023",
+      "fecha": "2016-03-14",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0023.jpg"
+    },
+    {
+      "id": "0024",
+      "fecha": "2015-12-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0024.jpg"
+    },
+    {
+      "id": "0025",
+      "fecha": "2016-03-14",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0025.jpg"
+    },
+    {
+      "id": "0026",
+      "fecha": "2016-03-30",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0026.jpg"
+    },
+    {
+      "id": "0027",
+      "fecha": "2016-04-21",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0027.jpg"
+    },
+    {
+      "id": "0028",
+      "fecha": "2016-05-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0028.jpg"
+    },
+    {
+      "id": "0029",
+      "fecha": "2016-05-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0029.jpg"
+    },
+    {
+      "id": "0030",
+      "fecha": "2016-10-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0030.jpg"
+    },
+    {
+      "id": "0031",
+      "fecha": "2016-10-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0031.jpg"
+    },
+    {
+      "id": "0032",
+      "fecha": "2016-10-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0032.jpg"
+    },
+    {
+      "id": "0033",
+      "fecha": "2016-11-14",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0033.jpg"
+    },
+    {
+      "id": "0034",
+      "fecha": "2016-11-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0034.jpg"
+    },
+    {
+      "id": "0035",
+      "fecha": "2016-11-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0035.jpg"
+    },
+    {
+      "id": "0036",
+      "fecha": "2016-11-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0036.jpg"
+    },
+    {
+      "id": "0037",
+      "fecha": "2016-12-01",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0037.jpg"
+    },
+    {
+      "id": "0038",
+      "fecha": "2016-09-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0038.jpg"
+    },
+    {
+      "id": "0039",
+      "fecha": "2017-02-25",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0039.jpg"
+    },
+    {
+      "id": "0040",
+      "fecha": "2017-02-25",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0040.jpg"
+    },
+    {
+      "id": "0041",
+      "fecha": "2017-03-02",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0041.jpg"
+    },
+    {
+      "id": "0042",
+      "fecha": "2017-03-02",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0042.jpg"
+    },
+    {
+      "id": "0043",
+      "fecha": "2017-03-02",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0043.jpg"
+    },
+    {
+      "id": "0044",
+      "fecha": "2017-03-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0044.jpg"
+    },
+    {
+      "id": "0045",
+      "fecha": "2017-03-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0045.jpg"
+    },
+    {
+      "id": "0046",
+      "fecha": "2017-03-18",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0046.jpg"
+    },
+    {
+      "id": "0047",
+      "fecha": "2017-03-18",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0047.jpg"
+    },
+    {
+      "id": "0048",
+      "fecha": "2017-03-18",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0048.jpg"
+    },
+    {
+      "id": "0049",
+      "fecha": "2017-03-30",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0049.jpg"
+    },
+    {
+      "id": "0050",
+      "fecha": "2017-04-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0050.jpg"
+    },
+    {
+      "id": "0051",
+      "fecha": "2017-09-08",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0051.jpg"
+    },
+    {
+      "id": "0052",
+      "fecha": "2017-09-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0052.jpg"
+    },
+    {
+      "id": "0053",
+      "fecha": "2017-09-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0053.jpg"
+    },
+    {
+      "id": "0054",
+      "fecha": "2017-09-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0054.jpg"
+    },
+    {
+      "id": "0055",
+      "fecha": "2017-09-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0055.jpg"
+    },
+    {
+      "id": "0056",
+      "fecha": "2017-10-15",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0056.jpg"
+    },
+    {
+      "id": "0057",
+      "fecha": "2017-11-02",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0057.jpg"
+    },
+    {
+      "id": "0058",
+      "fecha": "2018-01-24",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0058.jpg"
+    },
+    {
+      "id": "0059",
+      "fecha": "2017-11-02",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0059.jpg"
+    },
+    {
+      "id": "0060",
+      "fecha": "2017-11-13",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0060.jpg"
+    },
+    {
+      "id": "0061",
+      "fecha": "2018-03-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0061.jpg"
+    },
+    {
+      "id": "0062",
+      "fecha": "2018-03-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0062.jpg"
+    },
+    {
+      "id": "0063",
+      "fecha": "2018-03-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0063.jpg"
+    },
+    {
+      "id": "0064",
+      "fecha": "2018-03-13",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0064.jpg"
+    },
+    {
+      "id": "0065",
+      "fecha": "2018-09-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0065.jpg"
+    },
+    {
+      "id": "0066",
+      "fecha": "2018-03-14",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0066.jpg"
+    },
+    {
+      "id": "0067",
+      "fecha": "2018-05-30",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0067.jpg"
+    },
+    {
+      "id": "0068",
+      "fecha": "2018-08-30",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0068.jpg"
+    },
+    {
+      "id": "0069",
+      "fecha": "2018-09-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0069.jpg"
+    },
+    {
+      "id": "0070",
+      "fecha": "2018-09-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0070.jpg"
+    },
+    {
+      "id": "0071",
+      "fecha": "2018-10-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0071.jpg"
+    },
+    {
+      "id": "0072",
+      "fecha": "2018-10-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0072.jpg"
+    },
+    {
+      "id": "0073",
+      "fecha": "2018-10-24",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0073.jpg"
+    },
+    {
+      "id": "0074",
+      "fecha": "2018-10-26",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0074.jpg"
+    },
+    {
+      "id": "0075",
+      "fecha": "2018-10-26",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0075.jpg"
+    },
+    {
+      "id": "0076",
+      "fecha": "2018-10-26",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0076.jpg"
+    },
+    {
+      "id": "0077",
+      "fecha": "2018-11-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0077.jpg"
+    },
+    {
+      "id": "0078",
+      "fecha": "2018-12-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0078.jpg"
+    },
+    {
+      "id": "0079",
+      "fecha": "2018-12-15",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0079.jpg"
+    },
+    {
+      "id": "0080",
+      "fecha": "2018-12-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0080.jpg"
+    },
+    {
+      "id": "0081",
+      "fecha": "2019-01-09",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0081.jpg"
+    },
+    {
+      "id": "0082",
+      "fecha": "2019-01-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0082.jpg"
+    },
+    {
+      "id": "0083",
+      "fecha": "2019-01-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0083.jpg"
+    },
+    {
+      "id": "0084",
+      "fecha": "2019-01-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0084.jpg"
+    },
+    {
+      "id": "0085",
+      "fecha": "2019-02-25",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0085.jpg"
+    },
+    {
+      "id": "0086",
+      "fecha": "2019-03-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0086.jpg"
+    },
+    {
+      "id": "0087",
+      "fecha": "2019-03-22",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0087.jpg"
+    },
+    {
+      "id": "0088",
+      "fecha": "2019-02-06",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0088.jpg"
+    },
+    {
+      "id": "0089",
+      "fecha": "2019-03-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0089.jpg"
+    },
+    {
+      "id": "0090",
+      "fecha": "2019-03-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0090.jpg"
+    },
+    {
+      "id": "0091",
+      "fecha": "2019-03-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0091.jpg"
+    },
+    {
+      "id": "0092",
+      "fecha": "2019-03-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0092.jpg"
+    },
+    {
+      "id": "0093",
+      "fecha": "2019-04-03",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0093.jpg"
+    },
+    {
+      "id": "0094",
+      "fecha": "2019-04-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0094.jpg"
+    },
+    {
+      "id": "0095",
+      "fecha": "2019-05-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0095.jpg"
+    },
+    {
+      "id": "0096",
+      "fecha": "2019-06-07",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0096.jpg"
+    },
+    {
+      "id": "0097",
+      "fecha": "2019-06-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0097.jpg"
+    },
+    {
+      "id": "0098",
+      "fecha": "2019-07-18",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0098.jpg"
+    },
+    {
+      "id": "0099",
+      "fecha": "2019-08-15",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0099.jpg"
+    },
+    {
+      "id": "0100",
+      "fecha": "2019-08-18",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0100.jpg"
+    },
+    {
+      "id": "0101",
+      "fecha": "2019-09-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0101.jpg"
+    },
+    {
+      "id": "0102",
+      "fecha": "2019-09-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0102.jpg"
+    },
+    {
+      "id": "0103",
+      "fecha": "2019-09-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0103.jpg"
+    },
+    {
+      "id": "0104",
+      "fecha": "2019-09-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0104.jpg"
+    },
+    {
+      "id": "0105",
+      "fecha": "2019-09-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0105.jpg"
+    },
+    {
+      "id": "0106",
+      "fecha": "2019-10-15",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0106.jpg"
+    },
+    {
+      "id": "0107",
+      "fecha": "2019-10-16",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0107.jpg"
+    },
+    {
+      "id": "0108",
+      "fecha": null,
+      "nota": "TARJETA RETIRADA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0108.jpg"
+    },
+    {
+      "id": "0109",
+      "fecha": null,
+      "nota": "TARJETA RETIRADA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0109.jpg"
+    },
+    {
+      "id": "0110",
+      "fecha": "2019-12-20",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0110.jpg"
+    },
+    {
+      "id": "0111",
+      "fecha": "2020-01-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0111.jpg"
+    },
+    {
+      "id": "0112",
+      "fecha": "2020-01-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0112.jpg"
+    },
+    {
+      "id": "0113",
+      "fecha": "2020-01-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0113.jpg"
+    },
+    {
+      "id": "0114",
+      "fecha": "2020-02-03",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0114.jpg"
+    },
+    {
+      "id": "0115",
+      "fecha": "2020-02-03",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0115.jpg"
+    },
+    {
+      "id": "0116",
+      "fecha": "2020-02-03",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0116.jpg"
+    },
+    {
+      "id": "0117",
+      "fecha": "2020-04-03",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0117.jpg"
+    },
+    {
+      "id": "0118",
+      "fecha": "2020-09-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0118.jpg"
+    },
+    {
+      "id": "0119",
+      "fecha": "2020-12-07",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0119.jpg"
+    },
+    {
+      "id": "0120",
+      "fecha": "2021-01-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0120.jpg"
+    },
+    {
+      "id": "0121",
+      "fecha": "2021-09-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0121.jpg"
+    },
+    {
+      "id": "0122",
+      "fecha": "2021-04-23",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0122.jpg"
+    },
+    {
+      "id": "0123",
+      "fecha": "2021-07-31",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0123.jpg"
+    },
+    {
+      "id": "0124",
+      "fecha": "2021-10-25",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0124.jpg"
+    },
+    {
+      "id": "0125",
+      "fecha": "2021-12-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0125.jpg"
+    },
+    {
+      "id": "0126",
+      "fecha": "2023-08-20",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0126.jpg"
+    },
+    {
+      "id": "0127",
+      "fecha": "2022-09-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0127.jpg"
+    },
+    {
+      "id": "0128",
+      "fecha": "2023-01-13",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0128.jpg"
+    },
+    {
+      "id": "0129",
+      "fecha": "2023-09-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0129.jpg"
+    },
+    {
+      "id": "0130",
+      "fecha": "2023-09-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0130.jpg"
+    },
+    {
+      "id": "0131",
+      "fecha": "2023-09-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0131.jpg"
+    },
+    {
+      "id": "0132",
+      "fecha": "2023-09-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0132.jpg"
+    },
+    {
+      "id": "0133",
+      "fecha": "2023-09-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0133.jpg"
+    },
+    {
+      "id": "0134",
+      "fecha": "2023-10-20",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0134.jpg"
+    },
+    {
+      "id": "0135",
+      "fecha": "2023-10-20",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0135.jpg"
+    },
+    {
+      "id": "0136",
+      "fecha": "2023-10-26",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0136.jpg"
+    },
+    {
+      "id": "0137",
+      "fecha": "2023-11-12",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0137.jpg"
+    },
+    {
+      "id": "0138",
+      "fecha": "2023-11-12",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0138.jpg"
+    },
+    {
+      "id": "0139",
+      "fecha": "2023-10-26",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0139.jpg"
+    },
+    {
+      "id": "0140",
+      "fecha": "2023-12-13",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0140.jpg"
+    },
+    {
+      "id": "0141",
+      "fecha": "2024-03-08",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0141.jpg"
+    },
+    {
+      "id": "0142",
+      "fecha": "2023-12-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0142.jpg"
+    },
+    {
+      "id": "0143",
+      "fecha": "2024-03-18",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0143.jpg"
+    },
+    {
+      "id": "0144",
+      "fecha": "2024-03-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0144.jpg"
+    },
+    {
+      "id": "0145",
+      "fecha": "2024-04-02",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0145.jpg"
+    },
+    {
+      "id": "0146",
+      "fecha": "2024-05-08",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0146.jpg"
+    },
+    {
+      "id": "0147",
+      "fecha": "2024-05-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0147.jpg"
+    },
+    {
+      "id": "0148",
+      "fecha": "2024-05-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0148.jpg"
+    },
+    {
+      "id": "0149",
+      "fecha": "2024-05-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0149.jpg"
+    },
+    {
+      "id": "0150",
+      "fecha": "2024-05-22",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0150.jpg"
+    },
+    {
+      "id": "0151",
+      "fecha": "2024-06-07",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0151.jpg"
+    },
+    {
+      "id": "0152",
+      "fecha": "2024-06-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0152.jpg"
+    },
+    {
+      "id": "0153",
+      "fecha": "2024-09-09",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0153.jpg"
+    },
+    {
+      "id": "0154",
+      "fecha": "2024-09-27",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0154.jpg"
+    },
+    {
+      "id": "0155",
+      "fecha": "2024-10-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0155.jpg"
+    },
+    {
+      "id": "0156",
+      "fecha": "2024-10-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0156.jpg"
+    },
+    {
+      "id": "0157",
+      "fecha": "2024-10-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0157.jpg"
+    },
+    {
+      "id": "0158",
+      "fecha": "2024-10-23",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0158.jpg"
+    },
+    {
+      "id": "0159",
+      "fecha": "2024-12-06",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0159.jpg"
+    },
+    {
+      "id": "0160",
+      "fecha": "2024-12-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0160.jpg"
+    },
+    {
+      "id": "0161",
+      "fecha": "2024-12-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0161.jpg"
+    },
+    {
+      "id": "0162",
+      "fecha": "2024-12-24",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0162.jpg"
+    },
+    {
+      "id": "0163",
+      "fecha": "2025-01-07",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0163.jpg"
+    },
+    {
+      "id": "0164",
+      "fecha": "2025-01-15",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0164.jpg"
+    },
+    {
+      "id": "0165",
+      "fecha": "2025-01-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0165.jpg"
+    },
+    {
+      "id": "0166",
+      "fecha": "2025-01-23",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0166.jpg"
+    },
+    {
+      "id": "0167",
+      "fecha": "2025-03-24",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0167.jpg"
+    },
+    {
+      "id": "0168",
+      "fecha": "2025-03-25",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0168.jpg"
+    },
+    {
+      "id": "0169",
+      "fecha": "2025-03-26",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0169.jpg"
+    },
+    {
+      "id": "0170",
+      "fecha": "2025-03-26",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0170.jpg"
+    },
+    {
+      "id": "0171",
+      "fecha": "2025-04-30",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0171.jpg"
+    },
+    {
+      "id": "0172",
+      "fecha": "2025-05-06",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0172.jpg"
+    },
+    {
+      "id": "0173",
+      "fecha": "2026-05-06",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0173.jpg"
+    },
+    {
+      "id": "0174",
+      "fecha": "2025-05-06",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0174.jpg"
+    },
+    {
+      "id": "0175",
+      "fecha": "2025-05-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0175.jpg"
+    },
+    {
+      "id": "0176",
+      "fecha": "2025-05-25",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0176.jpg"
+    },
+    {
+      "id": "0177",
+      "fecha": "2025-06-21",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0177.jpg"
+    },
+    {
+      "id": "0178",
+      "fecha": "2025-07-05",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0178.jpg"
+    },
+    {
+      "id": "0179",
+      "fecha": "2025-07-14",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0179.jpg"
+    },
+    {
+      "id": "0180",
+      "fecha": "2025-08-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0180.jpg"
+    },
+    {
+      "id": "0181",
+      "fecha": "2025-08-08",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0181.jpg"
+    },
+    {
+      "id": "0182",
+      "fecha": "2025-08-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0182.jpg"
+    },
+    {
+      "id": "0183",
+      "fecha": "2025-09-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0183.jpg"
+    },
+    {
+      "id": "0184",
+      "fecha": "2025-08-04",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0184.jpg"
+    },
+    {
+      "id": "0185",
+      "fecha": "2025-09-15",
+      "nota": "SIN VENTA PUBLICA",
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0185.jpg"
+    },
+    {
+      "id": "0186",
+      "fecha": "2025-09-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0186.jpg"
+    },
+    {
+      "id": "0187",
+      "fecha": "2025-09-25",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0187.jpg"
+    },
+    {
+      "id": "0188",
+      "fecha": "2025-09-29",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0188.jpg"
+    },
+    {
+      "id": "0189",
+      "fecha": "2025-09-30",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0189.jpg"
+    },
+    {
+      "id": "0190",
+      "fecha": "2025-10-05",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0190.jpg"
+    },
+    {
+      "id": "0191",
+      "fecha": "2025-10-05",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0191.jpg"
+    },
+    {
+      "id": "0192",
+      "fecha": "2025-10-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0192.jpg"
+    },
+    {
+      "id": "0193",
+      "fecha": "2025-10-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0193.jpg"
+    },
+    {
+      "id": "0194",
+      "fecha": "2025-10-16",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0194.jpg"
+    },
+    {
+      "id": "0195",
+      "fecha": "2025-10-23",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0195.jpg"
+    },
+    {
+      "id": "0196",
+      "fecha": "2025-10-23",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0196.jpg"
+    },
+    {
+      "id": "0197",
+      "fecha": "2025-11-14",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0197.jpg"
+    },
+    {
+      "id": "0198",
+      "fecha": "2025-10-23",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0198.jpg"
+    },
+    {
+      "id": "0199",
+      "fecha": "2025-11-06",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0199.jpg"
+    },
+    {
+      "id": "0200",
+      "fecha": "2025-11-14",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0200.jpg"
+    },
+    {
+      "id": "0201",
+      "fecha": "2025-11-20",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0201.jpg"
+    },
+    {
+      "id": "0202",
+      "fecha": "2025-11-24",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0202.jpg"
+    },
+    {
+      "id": "0203",
+      "fecha": "2025-11-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0203.jpg"
+    },
+    {
+      "id": "0204",
+      "fecha": "2025-11-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0204.jpg"
+    },
+    {
+      "id": "0205",
+      "fecha": "2025-11-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0205.jpg"
+    },
+    {
+      "id": "0206",
+      "fecha": "2025-12-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0206.jpg"
+    },
+    {
+      "id": "0207",
+      "fecha": "2025-12-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0207.jpg"
+    },
+    {
+      "id": "0208",
+      "fecha": "2025-12-01",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0208.jpg"
+    },
+    {
+      "id": "0209",
+      "fecha": "2025-12-18",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0209.jpg"
+    },
+    {
+      "id": "0210",
+      "fecha": "2025-12-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0210.jpg"
+    },
+    {
+      "id": "0211",
+      "fecha": "2025-12-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0211.jpg"
+    },
+    {
+      "id": "0212",
+      "fecha": "2025-12-31",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0212.jpg"
+    },
+    {
+      "id": "0213",
+      "fecha": "2026-01-12",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0213.jpg"
+    },
+    {
+      "id": "0214",
+      "fecha": "2026-01-19",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0214.jpg"
+    },
+    {
+      "id": "0215",
+      "fecha": "2026-02-13",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0215.jpg"
+    },
+    {
+      "id": "0216",
+      "fecha": "2026-02-28",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0216.jpg"
+    },
+    {
+      "id": "0217",
+      "fecha": "2026-03-03",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0217.jpg"
+    },
+    {
+      "id": "0218",
+      "fecha": "2026-03-09",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0218.jpg"
+    },
+    {
+      "id": "0219",
+      "fecha": "2026-03-10",
+      "nota": null,
+      "serie": null,
+      "rareza": null,
+      "nombre": null,
+      "imagen": "0219.jpg"
+    }
+  ]
+}

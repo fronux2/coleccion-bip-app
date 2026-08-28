@@ -14,6 +14,11 @@ export const Colors = {
     backgroundElement: '#F0F0F3',
     backgroundSelected: '#E0E1E6',
     textSecondary: '#60646C',
+    // Verde inspirado en la señalética de Red Movilidad/Bip. Único acento
+    // de marca -- solo para el indicador "tengo" y el CTA principal (ver
+    // docs/designs/coleccion-bip.md, Sistema Visual).
+    accent: '#00954A',
+    onAccent: '#ffffff',
   },
   dark: {
     text: '#ffffff',
@@ -21,6 +26,8 @@ export const Colors = {
     backgroundElement: '#212225',
     backgroundSelected: '#2E3135',
     textSecondary: '#B0B4BA',
+    accent: '#1FB865',
+    onAccent: '#ffffff',
   },
 } as const;
 

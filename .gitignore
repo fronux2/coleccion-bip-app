@@ -41,3 +41,10 @@ example
 # generated native folders
 /ios
 /android
+
+# generated ingest output (regenerate with scripts/ingest-pdf/extract.py)
+/scripts/ingest-pdf/output/
+
+# Python
+__pycache__/
+*.pyc

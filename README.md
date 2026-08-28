@@ -1,56 +1,50 @@
-# Welcome to your Expo app 👋
+# Colección BIP
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+La Pokedex de las tarjetas Bip de Santiago. Catálogo navegable y trackeable de las tarjetas Bip, extraído del catálogo oficial de Miguel Garrido ("Don Tarjetón") y convertido en una app local-first con Expo.
 
-## Get started
+Ver el diseño completo en [`docs/designs/coleccion-bip.md`](docs/designs/coleccion-bip.md).
 
-1. Install dependencies
+## Qué hace
+
+- **Catálogo**: grilla navegable de las 219 tarjetas (imagen + fecha), con búsqueda.
+- **Ficha**: detalle de cada tarjeta con toggle "La tengo" / "Pendiente".
+- **Mi colección**: solo las tarjetas marcadas como propias.
+- **Progreso**: porcentaje global de la colección.
+
+Todo el progreso vive en el dispositivo (AsyncStorage) — sin cuenta, sin servidor, sin base de datos por ahora.
+
+## Empezar
+
+1. Instalar dependencias
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Levantar la app
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   Desde ahí puedes abrirla en un development build, emulador Android, simulador iOS, Expo Go, o web (`npm run web`).
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Estructura
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- `src/app/` — pantallas (expo-router, file-based routing): `catalogo/`, `mi-coleccion/`, `progreso.tsx`.
+- `src/context/collection-context.tsx` — `CollectionProvider`: estado de colección compartido entre pantallas (toggle optimista con rollback).
+- `src/components/` — `card-tile.tsx`, `ficha-screen.tsx`, `empty-state.tsx`, etc.
+- `assets/catalogo/` — `catalogo.json` (219 tarjetas), imágenes `thumb/`/`detail/`, `index.ts` con el mapeo de `require()`.
+- `scripts/ingest-pdf/` — script de extracción (Python + PyMuPDF) que generó el catálogo a partir del PDF original. Es una extracción de una sola vez, no un pipeline que se re-corre en cada build.
 
-## Get a fresh project
-
-When you're ready, run:
+## Tests
 
 ```bash
-npm run reset-project
+npm test
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Jest + jest-expo + Testing Library. Cubre el matching de ingesta y el `CollectionProvider` (toggle éxito/fallo/rollback, fórmula de progreso).
 
-### Other setup steps
+## Licencia
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Todos los derechos reservados — ver [`LICENSE`](LICENSE).
