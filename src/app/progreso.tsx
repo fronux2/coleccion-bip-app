@@ -2,6 +2,7 @@ import { SymbolView } from 'expo-symbols';
 import { StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { ShareMissingCardsButton } from '@/components/share-missing-cards-button';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { MaxDetailWidth, Spacing } from '@/constants/theme';
@@ -46,6 +47,7 @@ export default function ProgresoScreen() {
             <ThemedText themeColor="textSecondary">
               {tengoCount} de {total} tarjetas
             </ThemedText>
+            <ShareMissingCardsButton />
           </>
         )}
       </ThemedView>

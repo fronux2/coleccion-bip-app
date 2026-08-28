@@ -9,7 +9,7 @@ Ver el diseño completo en [`docs/designs/coleccion-bip.md`](docs/designs/colecc
 - **Catálogo**: grilla navegable de las 219 tarjetas (imagen + fecha), con búsqueda.
 - **Ficha**: detalle de cada tarjeta con toggle "La tengo" / "Pendiente".
 - **Mi colección**: solo las tarjetas marcadas como propias.
-- **Progreso**: porcentaje global de la colección.
+- **Progreso**: porcentaje global de la colección, con botón para compartir (o guardar en la galería, en móvil) un collage de las tarjetas que faltan.
 
 Todo el progreso vive en el dispositivo (AsyncStorage) — sin cuenta, sin servidor, sin base de datos por ahora.
 
@@ -33,7 +33,8 @@ Todo el progreso vive en el dispositivo (AsyncStorage) — sin cuenta, sin servi
 
 - `src/app/` — pantallas (expo-router, file-based routing): `catalogo/`, `mi-coleccion/`, `progreso.tsx`.
 - `src/context/collection-context.tsx` — `CollectionProvider`: estado de colección compartido entre pantallas (toggle optimista con rollback).
-- `src/components/` — `card-tile.tsx`, `ficha-screen.tsx`, `empty-state.tsx`, etc.
+- `src/components/` — `card-tile.tsx`, `ficha-screen.tsx`, `empty-state.tsx`, `share-missing-cards-button.tsx` (+ `.web.tsx`), etc.
+- `src/lib/collage.ts` — reparte una lista de tarjetas en páginas de tamaño parejo para el collage de "tarjetas que me faltan".
 - `assets/catalogo/` — `catalogo.json` (219 tarjetas), imágenes `thumb/`/`detail/`, `index.ts` con el mapeo de `require()`.
 - `scripts/ingest-pdf/` — script de extracción (Python + PyMuPDF) que generó el catálogo a partir del PDF original. Es una extracción de una sola vez, no un pipeline que se re-corre en cada build.
 
@@ -43,7 +44,7 @@ Todo el progreso vive en el dispositivo (AsyncStorage) — sin cuenta, sin servi
 npm test
 ```
 
-Jest + jest-expo + Testing Library. Cubre el matching de ingesta y el `CollectionProvider` (toggle éxito/fallo/rollback, fórmula de progreso).
+Jest + jest-expo + Testing Library. Cubre el matching de ingesta, el `CollectionProvider` (toggle éxito/fallo/rollback, fórmula de progreso) y el paginado del collage de tarjetas faltantes.
 
 ## Licencia
 

@@ -31,6 +31,10 @@ export function getDetailImage(id: string) {
   return detail[id];
 }
 
+export function getMissingCards(has: (id: string) => boolean): CatalogCard[] {
+  return catalogo.filter((card) => !has(card.id));
+}
+
 const MESES = [
   'enero',
   'febrero',
