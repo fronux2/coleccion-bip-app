@@ -70,3 +70,11 @@ export const Spacing = {
 
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
 export const MaxContentWidth = 800;
+// Grilla del Catálogo/Mi colección en viewports anchos (web/tablet): más
+// ancho que MaxContentWidth para dejar entrar más columnas sin que las
+// tarjetas queden gigantes. Ver TODOS.md, "columnas de grilla responsivas".
+export const MaxGridWidth = 1000;
+// Pantallas de una sola columna (Ficha, Progreso) en viewports anchos --
+// evita que la imagen de detalle o la barra de progreso se estiren a todo
+// el ancho de un monitor.
+export const MaxDetailWidth = 480;

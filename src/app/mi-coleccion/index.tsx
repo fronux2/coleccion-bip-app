@@ -7,8 +7,9 @@ import { CardTile } from '@/components/card-tile';
 import { EmptyState } from '@/components/empty-state';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Spacing } from '@/constants/theme';
+import { MaxGridWidth, Spacing } from '@/constants/theme';
 import { useCollection } from '@/context/collection-context';
+import { useGridColumns } from '@/hooks/use-grid-columns';
 import { useTheme } from '@/hooks/use-theme';
 import { catalogo } from '@/lib/catalogo';
 
@@ -16,6 +17,7 @@ export default function MiColeccionScreen() {
   const theme = useTheme();
   const router = useRouter();
   const { has } = useCollection();
+  const columns = useGridColumns();
 
   const data = useMemo(() => catalogo.filter((card) => has(card.id)), [has]);
 
@@ -28,14 +30,16 @@ export default function MiColeccionScreen() {
       </ThemedView>
 
       <FlatList
+        key={columns}
         data={data}
         keyExtractor={(card) => card.id}
-        numColumns={3}
+        numColumns={columns}
         contentContainerStyle={data.length === 0 ? styles.gridEmpty : styles.grid}
         renderItem={({ item }) => (
           <CardTile
             card={item}
             tengo
+            columns={columns}
             onPress={() => router.push(`/mi-coleccion/ficha/${item.id}`)}
           />
         )}
@@ -61,6 +65,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.four,
     paddingBottom: Spacing.two,
     paddingTop: Platform.OS === 'web' ? Spacing.six : 0,
+    width: '100%',
+    maxWidth: MaxGridWidth,
+    alignSelf: 'center',
   },
   title: {
     fontSize: 28,
@@ -70,6 +77,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingHorizontal: Spacing.three,
     paddingBottom: Spacing.six,
+    width: '100%',
+    maxWidth: MaxGridWidth,
+    alignSelf: 'center',
   },
   gridEmpty: {
     flexGrow: 1,

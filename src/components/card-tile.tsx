@@ -12,13 +12,15 @@ type CardTileProps = {
   card: CatalogCard;
   tengo: boolean;
   onPress: () => void;
+  columns: number;
 };
 
 // Aspect ratio 1.6 = proporción real de una tarjeta física BIP (ver
-// docs/designs/coleccion-bip.md, Sistema Visual). Grilla de 3 columnas.
+// docs/designs/coleccion-bip.md, Sistema Visual). Columnas responsivas --
+// ver src/hooks/use-grid-columns.ts.
 const ASPECT_RATIO = 1.6;
 
-export function CardTile({ card, tengo, onPress }: CardTileProps) {
+export function CardTile({ card, tengo, onPress, columns }: CardTileProps) {
   const theme = useTheme();
   const [imageFailed, setImageFailed] = useState(false);
   const source = getThumbnail(card.id);
@@ -29,7 +31,11 @@ export function CardTile({ card, tengo, onPress }: CardTileProps) {
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={`Tarjeta ${label || card.id}, ${tengo ? 'la tengo' : 'pendiente'}`}
-      style={({ pressed }) => [styles.cell, pressed && styles.pressed]}>
+      style={({ pressed }) => [
+        styles.cell,
+        { width: `${100 / columns}%` },
+        pressed && styles.pressed,
+      ]}>
       <View style={[styles.imageWrapper, { backgroundColor: theme.backgroundElement }]}>
         {!imageFailed && source ? (
           <Image
@@ -76,7 +82,6 @@ export function CardTile({ card, tengo, onPress }: CardTileProps) {
 
 const styles = StyleSheet.create({
   cell: {
-    width: '33.333%',
     padding: Spacing.one,
   },
   pressed: {

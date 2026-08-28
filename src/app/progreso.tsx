@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Spacing } from '@/constants/theme';
+import { MaxDetailWidth, Spacing } from '@/constants/theme';
 import { useCollection } from '@/context/collection-context';
 import { useTheme } from '@/hooks/use-theme';
 
@@ -63,6 +63,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     gap: Spacing.three,
     paddingHorizontal: Spacing.five,
+    width: '100%',
+    maxWidth: MaxDetailWidth,
+    alignSelf: 'center',
   },
   percentage: {
     fontSize: 64,

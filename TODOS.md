@@ -13,15 +13,3 @@
 **Effort:** S
 **Priority:** P2
 **Depends on:** Jest + jest-expo instalado (Next Step 1 del diseño)
-
-### Definir columnas de grilla responsivas para web
-
-**What:** Elegir el número de columnas del Catálogo para viewports anchos (web/tablet) — mobile ya quedó en 3 columnas.
-
-**Why:** Sin esto, la versión web hereda 3 columnas de mobile y se ve dispersa en una pantalla ancha.
-
-**Context:** Decidido en /plan-design-review (2026-08-28) junto con el aspect ratio 1.6 y las 3 columnas de mobile. Expo ya compila a web sin costo extra (ver Distribution Plan en `docs/designs/coleccion-bip.md`) — esto se resuelve cuando toque validar la versión web, no antes.
-
-**Effort:** XS
-**Priority:** P3
-**Depends on:** Pantallas Catálogo/Ficha implementadas en mobile primero
