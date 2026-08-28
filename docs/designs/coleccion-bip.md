@@ -14,7 +14,7 @@ El coleccionista de tarjetas BIP no tiene una forma de navegar su colección ni 
 ## What Makes This Cool
 
 - **La Pokedex de la BIP**: catálogo completo como grilla navegable — foto, fecha, serie. Filtrable y buscable.
-- **Arranca con tu colección real**: el script de ingesta lee los checkboxes "Lo tengo!" ya marcados en tu PDF y siembra "Mi colección" el primer día — cero trabajo repetido de las 215 tarjetas.
+- ~~Arranca con tu colección real desde los checkboxes del PDF~~ — **descartado tras validar la extracción (2026-08-28)**: los widgets "Pendiente/Lo tengo!" del PDF son pushbuttons sin estado persistente (`field_type=1`, sin `on_state`), no checkboxes reales — los 496 widgets del PDF (7 páginas) están todos en blanco porque este es la plantilla oficial de Garrido, no una copia marcada. No hay nada que sembrar; "Mi colección" arranca vacía y se marca dentro de la app.
 - **Progreso de colección**: porcentaje global de inicio. Progreso por serie y badges de sets completados llegan en v1.1, una vez definido de dónde sale `serie` (ver Open Question 1) — no se prometen con datos que hoy no existen.
 - **Local-first**: tu colección vive en tu teléfono. Sin cuenta, sin servidor, sin base de datos — por ahora.
 
@@ -32,7 +32,7 @@ El coleccionista de tarjetas BIP no tiene una forma de navegar su colección ni 
 
 1. El catálogo completo ya existe en el PDF del usuario — no hay que conseguirlo de la comunidad, hay que extraerlo. (confirmado)
 2. Local-first se mantiene: sin backend, sin BD; catálogo versionado (JSON) generado desde el PDF, progreso personal en el dispositivo. (confirmado)
-3. Los checkboxes "Lo tengo!" del PDF (campos de formulario reales) siembran la colección inicial del usuario en la app. (confirmado)
+3. ~~Los checkboxes "Lo tengo!" del PDF siembran la colección inicial.~~ **Descartado (2026-08-28)**: son pushbuttons sin estado, el PDF es la plantilla en blanco de Garrido. "Mi colección" arranca vacía; el usuario la marca dentro de la app.
 4. Alcance de práctica/portafolio; sin atribución obligatoria (tarjetas de facto públicas, sin reclamo formal de derechos) y sin bloquear el desarrollo por permisos en esta fase — reconsiderado durante el eng review. (confirmado)
 5. Mobile se prueba primero (uso real); web se valida después con el mismo código Expo. (confirmado)
 
@@ -45,9 +45,11 @@ Se evaluaron 3 enfoques en la sesión del 13-ago: catálogo empaquetado sin vers
 
 **Approach A: Grilla fija por coordenadas** — renderiza cada página y recorta por coordenadas asumiendo 4 columnas. Simple pero frágil: el layout ya cambió 7 veces (V7) y filas irregulares rompen las coordenadas. Esfuerzo M, Riesgo Medio. **Descartado.**
 
-**Approach B: Objetos embebidos + campos de formulario** — extrae las imágenes incrustadas en resolución nativa y empareja imagen+fecha+checkbox por cercanía geométrica en la página (no por grilla asumida). Esfuerzo M, Riesgo Bajo-Medio.
+**Approach B: Objetos embebidos + texto posicionado** — extrae las imágenes incrustadas en resolución nativa y empareja imagen+fecha por cercanía geométrica en la página (no por grilla asumida). Esfuerzo M, Riesgo Bajo-Medio.
 
-**Approach C: B + reporte de revisión visual — ELEGIDO** — mismo método que B, más una página HTML con las 215 tarjetas extraídas (imagen, fecha, estado detectado) para revisión de un vistazo antes de generar el catálogo final. Esfuerzo M+, Riesgo Bajo.
+**Approach C: B + reporte de revisión visual — ELEGIDO** — mismo método que B, más una página HTML con las ~215 tarjetas extraídas (imagen + fecha) para revisión de un vistazo antes de generar el catálogo final. Esfuerzo M+, Riesgo Bajo.
+
+**Validado en vivo (2026-08-28, PyMuPDF sobre el PDF real):** 7 páginas, ~50 imágenes por página (algunas con smask — máscara de transparencia — que no cuentan como tarjeta separada). Las fechas son **texto plano posicionado** (`page.get_text("words")`, con bounding box por palabra), no campos de formulario — el matching es imagen↔texto por proximidad, sin necesidad de leer ningún widget. Los elementos "Pendiente/Lo tengo!" **no son checkboxes** (son `field_type=1`, pushbutton, sin `on_state` ni valor persistente) — se descartan del pipeline por completo, ver nota en Premisas y "What Makes This Cool".
 
 ## Recommended Approach
 
@@ -55,15 +57,15 @@ Se evaluaron 3 enfoques en la sesión del 13-ago: catálogo empaquetado sin vers
 
 Un script de ingesta (Node o Python, corre una vez de forma local — no en runtime de la app) hace:
 
-0. **Validación de la librería en un subset**: antes de correr sobre las 215 tarjetas, probar la extracción (imagen + lectura de campos AcroForm) en ~10 tarjetas de una sola página. Algunos generadores de PDF aplanan o codifican mal los campos de formulario — hay que confirmar que la librería elegida lee los checkboxes reales antes de invertir en el resto del pipeline.
-1. **Extracción**: recorre el PDF con una librería de manipulación de PDF (ej. PyMuPDF/`fitz` o `pypdf`), extrae cada imagen de tarjeta embebida y lee los campos AcroForm (fecha + checkbox "Pendiente/Lo tengo!"). Emparejamiento: cada checkbox/fecha se asocia a la imagen cuyo bounding box es el más cercano por encima dentro de una tolerancia horizontal (misma columna aproximada); un par sin match dentro de la tolerancia, o con más de un candidato igual de cerca, se marca "ambiguo" y pasa igual al reporte de revisión en vez de adivinar. Si la extracción nativa de una imagen falla o da un objeto no utilizable (máscara/tile/CMYK), fallback a renderizar esa página y recortar por la posición conocida de esa tarjeta.
-2. **Reporte de revisión**: HTML estático con las ~215 tarjetas extraídas (imagen + fecha + estado detectado), con los casos "ambiguo" y los duplicados exactos de imagen destacados aparte, para que el usuario confirme de un vistazo antes de que entren al catálogo final.
+0. ~~Validación de la librería en un subset~~ — **hecho (2026-08-28)**: PyMuPDF lee imágenes embebidas y texto posicionado correctamente sobre el PDF real. Ver hallazgos arriba.
+1. **Extracción**: recorre el PDF con PyMuPDF (`page.get_images(full=True)` + `page.extract_image(xref)` por imagen, `page.get_text("words")` para las fechas). Emparejamiento: cada fecha se asocia a la imagen cuyo bounding box es el más cercano dentro de una tolerancia horizontal (misma columna aproximada); un par sin match dentro de la tolerancia, o con más de un candidato igual de cerca, se marca "ambiguo" y pasa igual al reporte de revisión en vez de adivinar. Imágenes con `smask` (máscara de transparencia) se tratan como parte de la imagen base, no como una tarjeta separada. Si la extracción nativa de una imagen falla o da un objeto no utilizable, fallback a renderizar esa página y recortar por la posición conocida de esa tarjeta.
+2. **Reporte de revisión**: HTML estático con las ~215 tarjetas extraídas (imagen + fecha), con los casos "ambiguo" y los duplicados exactos de imagen destacados aparte, para que el usuario confirme de un vistazo antes de que entren al catálogo final.
 3. **Catálogo final**: tras la aprobación, genera `catalogo.json` (schemaVersion, generatedAt, array de cards con `id` **permanente, asignado una sola vez** en esta extracción inicial — más nombre/fecha, `serie`/`rareza` en `null` por ahora). Duplicados que el usuario confirma en el reporte como error de extracción se eliminan antes de generar el JSON; si confirma que es una variante real, se mantiene con id propio y un campo opcional `variante_de: <id>`. Las imágenes se procesan a dos tamaños fijos y comprimidos (thumbnail ~300px para la grilla, detalle ~800px para la ficha) — presupuesto total estimado ~15-20MB para las 215 tarjetas, dentro de rango razonable para un binario Expo; si se excede, se sube compresión antes de bajar resolución. El script también genera el archivo de mapeo `assets/catalogo/index.ts` con un `require()` explícito por imagen — Metro no resuelve rutas dinámicas, así que el mapeo estático se genera junto con el catálogo, no a mano.
-4. **Seed de colección**: los checkboxes marcados "Lo tengo!" generan el blob inicial de progreso (`{"version":1,"estado":{"<id>":"tengo", ...}}`) que la app carga la primera vez que arranca (si no hay progreso ya guardado en AsyncStorage).
+4. ~~Seed de colección desde checkboxes~~ — **descartado (2026-08-28)**: no hay estado que leer (ver hallazgos arriba). "Mi colección" arranca vacía (`{"version":1,"estado":{}}`); el usuario la construye marcando dentro de la app.
 
 **Decisiones de /plan-eng-review (2026-08-27):**
 
-- **El script de ingesta es código versionado**, en `scripts/ingest-pdf/` dentro del repo, con tests unitarios para el matching geométrico (imagen↔fecha↔checkbox) — el punto donde un bug silencioso corrompería el catálogo en esta extracción inicial de 215 tarjetas. Es una extracción de una sola vez (no un pipeline que se re-corre): tarjetas nuevas después del v1 se agregan a mano, una por una (ver Open Question 2).
+- **El script de ingesta es código versionado**, en `scripts/ingest-pdf/` dentro del repo (Python + PyMuPDF), con tests unitarios para el matching geométrico (imagen↔fecha) — el punto donde un bug silencioso corrompería el catálogo en esta extracción inicial de ~215 tarjetas. Es una extracción de una sola vez (no un pipeline que se re-corre): tarjetas nuevas después del v1 se agregan a mano, una por una (ver Open Question 2).
 - **Estado de colección centralizado**: un `CollectionProvider` (React Context) envuelve el tab navigator, carga el progreso una vez desde AsyncStorage al arrancar, y expone `toggle(id)` y `percentageGlobal()`. Las 4 pantallas leen/escriben ahí — no releen AsyncStorage cada una — así un toggle en Ficha se refleja al instante en Progreso sin re-navegar.
 - **Toggle optimista con rollback visible**: `toggle(id)` mueve el check en la UI al instante; si el `AsyncStorage.setItem` falla, revierte la UI y muestra el aviso no bloqueante — nunca deja al usuario creyendo que guardó algo que no se guardó.
 - **`CardTile` como componente compartido** (`src/components/card-tile.tsx`): imagen thumbnail + fecha + indicador de estado, usado por Catálogo, Mi colección y resultados de búsqueda — un cambio visual futuro (ej. mostrar rareza) se hace una vez.
@@ -134,7 +136,7 @@ Sin DESIGN.md todavía — estas decisiones cubren lo necesario para implementar
 
 - El catálogo renderiza con las ~215 tarjetas reales extraídas del PDF del usuario (imagen + fecha), no un subset de ejemplo.
 - El reporte de revisión visual permite confirmar el emparejamiento antes de que el catálogo entre a la app.
-- "Mi colección" arranca ya sembrada con las tarjetas que el usuario marcó "Lo tengo!" en el PDF — sin marcarlas de nuevo a mano.
+- "Mi colección" arranca vacía (el PDF no tenía marcas que sembrar) y el usuario puede marcar tarjetas dentro de la app desde el primer uso.
 - Marcar/desmarcar una tarjeta en la app actualiza el porcentaje de progreso al instante y persiste entre reinicios (AsyncStorage).
 - Búsqueda/filtro sin resultados muestra un estado vacío explícito; una imagen que falla al cargar muestra un placeholder, nunca rompe la grilla.
 - La app corre en el teléfono del usuario desde un build de desarrollo Expo.
@@ -149,8 +151,8 @@ Sin DESIGN.md todavía — estas decisiones cubren lo necesario para implementar
 
 Cada paso deja una pieza usable:
 
-1. **Setup de testing** — instalar y configurar Jest + jest-expo. *Hito: `npm test` corre (aunque sea sobre un test trivial) antes de escribir el script de ingesta.*
-2. **Validar extracción en un subset (~10 tarjetas)** — confirmar que la librería PDF elegida lee imágenes y campos AcroForm correctamente antes de invertir en las 215. *Hito: confianza en el enfoque antes de escalar.*
+1. ~~Setup de testing~~ — **hecho (2026-08-28)**: Jest + jest-expo + Testing Library instalados y configurados, `npm test` corre sobre un test trivial.
+2. ~~Validar extracción en un subset~~ — **hecho (2026-08-28)**: PyMuPDF confirmado como librería (extrae imágenes + texto posicionado correctamente). Reveló que no hay checkboxes reales que leer (ver Approaches Considered) — el script se simplifica a imagen↔fecha.
 3. **Script de extracción del PDF** (`scripts/ingest-pdf/`, con tests unitarios del matching) — objetos embebidos + campos AcroForm con matching por proximidad, fallback de render-and-crop, y el reporte HTML de revisión (con ambiguos/duplicados destacados). Si el reporte marca más de ~15 tarjetas como "ambiguo" (más del 7% de 215), pausar y revisar la tolerancia de matching antes de aprobar el catálogo a ciegas — no hay presupuesto de tiempo definido para revisión manual masiva. *Hito: reporte visual de las 215 tarjetas listo para confirmar.*
 4. **Catálogo JSON + seed de colección + mapeo de assets** — generar `catalogo.json` (ids permanentes asignados una vez), imágenes en 2 tamaños comprimidos, `assets/catalogo/index.ts` con los `require()`, y el blob de progreso inicial desde los checkboxes, tras aprobar el reporte. *Hito: los datos existen, validan, y Metro puede resolver las imágenes.*
 5. **CollectionProvider + Pantallas Catálogo + Ficha** — Context compartido, grilla (FlatList + expo-image) con imagen/fecha vía `CardTile`, ficha con imagen grande/fecha/toggle optimista con rollback. *Hito: puedes ver y editar tu colección real en el teléfono.*
